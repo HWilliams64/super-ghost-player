@@ -44,7 +44,7 @@ def TEAM_NAME = "your_team_name"  //Replace 'your_team_name' with your actual te
 tasks {
     shadowJar {
         archiveBaseName.set("${TEAM_NAME}")
-        destinationDir = new File(project.projectDir.getAbsolutePath()+"/..")
+        destinationDirectory = new File(project.projectDir.getAbsolutePath()+"/..")
         archiveClassifier.set('')
         archiveVersion.set('')
         exclude("module-info.class")
